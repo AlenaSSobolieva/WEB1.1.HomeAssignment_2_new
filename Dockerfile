@@ -14,11 +14,11 @@ COPY poetry.lock $MAIN_HOME/poetry.lock
 
 # Встановимо залежності всередині контейнера
 RUN pip install poetry
-RUN pip poetry config virtualenvs.create false && poetry install --only main
+#RUN pip poetry config virtualenvs.create false
 
 COPY . .
 # Позначимо порт, де працює застосунок всередині контейнера
 EXPOSE 5000
 
 # Запустимо наш застосунок всередині контейнера
-ENTRYPOINT ["python", "app.py"]
+ENTRYPOINT ["python", "main.py"]
