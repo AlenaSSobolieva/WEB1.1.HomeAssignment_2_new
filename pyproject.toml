@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "web1-1-homeassignment-2-new"
+version = "0.1.0"
+description = ""
+authors = ["Alena Sobolieva <soboleva13as@gmail.com>"]
+readme = "README.md"
+#packages = [{include = "web1"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
